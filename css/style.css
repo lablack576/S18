@@ -7,7 +7,7 @@
       rgba(34, 34, 34, 0.6),
       rgba(34, 34, 34, 0.6)
     ),
-    url(/img/hero.png);
+    url(../img/hero.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center center;
@@ -145,8 +145,8 @@
 
 .session-video-iframe {
   border: none;
-  width: 80rem;
-  height: 45rem;
+  width: 800px;
+  height: 450px;
 }
 
 .session-video blockquote {
@@ -395,4 +395,33 @@
 
 .temporary-box p {
   width: max-content !important;
+}
+
+/****************/
+/* PAGE SECTION */
+/****************/
+
+.page-content {
+  padding: 9.6rem 0;
+}
+
+.page-secondary-heading {
+  font-size: 2.6rem;
+  line-height: 1.6;
+  letter-spacing: -0.75px;
+  margin-bottom: 2rem;
+}
+
+.page-tertiary-heading {
+  font-size: 2rem;
+  line-height: 1.6;
+  letter-spacing: -0.5px;
+  margin-bottom: 1rem;
+}
+
+.page-description {
+  font-size: 1.6rem;
+  letter-spacing: -0.5;
+  line-height: 1.6;
+  margin-bottom: 2.6rem;
 }
