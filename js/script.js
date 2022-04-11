@@ -1,3 +1,5 @@
+// Nav mobile version animation
+
 $(document).ready(function () {
   $(".icon-mobile-nav.open").click(function () {
     $(".nav-list").css("display", "flex");
