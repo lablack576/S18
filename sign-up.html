@@ -12,7 +12,7 @@
       content="Confidence & Basic Work is a training club for muay thai, kick boxing and MMA athletes."
     />
 
-    <title>F.A.Q</title>
+    <title>Sign Up - Join The Team</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -54,61 +54,77 @@
       </header>
       <div class="hero-box container">
         <div>
-          <h1 class="primary-heading">F.A.Q</h1>
+          <h1 class="primary-heading">Sign Up - Join The Team</h1>
         </div>
       </div>
     </section>
-    <section class="page-content">
-      <div class="container">
-        <h2 class="page-secondary-heading">F.A.Q - Confidence & Basic Work</h2>
-        <h3 class="page-tertiary-heading">Question 1</h3>
-        <p class="page-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-          quibusdam exercitationem, deserunt molestiae tempore necessitatibus
-          excepturi cum quo harum quasi voluptas quis expedita temporibus
-          cupiditate magnam voluptatem similique, in dolorum!
-        </p>
-        <p class="page-description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam error
-          natus quas dolores velit autem distinctio, animi id officia modi!
-          Debitis consequuntur tempore voluptas totam perspiciatis odio officiis
-          est aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-          nostrum eius ullam quis? Inventore at sequi temporibus officiis sunt
-          dolor rem ullam sint maxime amet, animi corrupti necessitatibus id.
-          Quae.
-        </p>
+    <section class="page-content sign-up">
+      <form action="sign-up.html" methode="post">
+        <h2>Sign Up - Create your account today !</h2>
+        <fieldset>
+          <legend>1- Your Basic Information :</legend>
+          <label for="name">Name :</label>
+          <input
+            type="text"
+            id="name"
+            name="user_name"
+            placeholder="Enter your full name"
+          />
+          <label for="email">Email :</label>
+          <input
+            type="email"
+            id="mail"
+            name="user_email"
+            placeholder="Enter your email address"
+          />
+          <label for="password">Password :</label>
+          <input
+            type="password"
+            id="password"
+            name="user_password"
+            placeholder="Enter your password"
+          />
+          <label>Age :</label>
+          <div>
+            <input
+              type="radio"
+              id="under_13"
+              value="under_13"
+              name="user_age"
+            />
+            <label for="under_13">Under 13</label>
+          </div>
+          <div>
+            <input type="radio" id="over_13" value="over_13" name="user_age" />
+            <label for="over_13">Over 13</label>
+          </div>
+        </fieldset>
 
-        <h3 class="page-tertiary-heading">Question 2</h3>
-        <p class="page-description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam error
-          natus quas dolores velit autem distinctio, animi id officia modi!
-          Debitis consequuntur tempore voluptas totam perspiciatis odio officiis
-          est aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-          nostrum eius ullam quis? Inventore at sequi temporibus officiis sunt
-          dolor rem ullam sint maxime amet, animi corrupti necessitatibus id.
-          Quae.
-        </p>
+        <fieldset>
+          <legend>2- Your profile :</legend>
+          <label for="bio">Bio :</label>
+          <textarea
+            id="bio"
+            name="user_bio"
+            placeholder="My name is Amine and I did 4 years of kick boxing before wanting..."
+          ></textarea>
 
-        <h3 class="page-tertiary-heading">Question 3</h3>
-        <p class="page-description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam error
-          natus quas dolores velit autem distinctio, animi id officia modi!
-          Debitis consequuntur tempore voluptas totam perspiciatis odio officiis
-          est aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-          nostrum eius ullam quis? Inventore at sequi temporibus officiis sunt
-          dolor rem ullam sint maxime amet, animi corrupti necessitatibus id.
-          Quae.
-        </p>
-        <p class="page-description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam error
-          natus quas dolores velit autem distinctio, animi id officia modi!
-          Debitis consequuntur tempore voluptas totam perspiciatis odio officiis
-          est aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-          nostrum eius ullam quis? Inventore at sequi temporibus officiis sunt
-          dolor rem ullam sint maxime amet, animi corrupti necessitatibus id.
-          Quae.
-        </p>
-      </div>
+          <label for="Frequency">Frequency :</label>
+          <select id="frequency" name="user_frequency">
+            <option value="2">Twice a week</option>
+            <option value="3">Three time a week</option>
+          </select>
+        </fieldset>
+        <input
+          class="btn--input btn--input--full"
+          id="sign-up-btn"
+          type="submit"
+          value="Create my account"
+        />
+        <a class="sign-up-link" href="sign-in.html" title="Sign in now"
+          >Already have an account? Sign in now</a
+        >
+      </form>
     </section>
     <footer class="footer">
       <div class="footer-grid container grid grid--3-cols">

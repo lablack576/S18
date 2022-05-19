@@ -434,3 +434,187 @@
   color: #b0982e;
   font-weight: 600;
 }
+
+/*******************/
+/***** SIGN UP & SIGN IN *****/
+/*******************/
+
+.sign-up form,
+.sign-in form {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #f4f7f8;
+  border-radius: 9px;
+  padding: 1.2rem;
+}
+
+.sign-up h2,
+.sign-in h2 {
+  color: #333;
+  font-size: 2.3rem;
+  padding: 1.2rem;
+}
+
+.sign-up fieldset,
+.sign-in fieldset {
+  padding: 2.6rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.sign-in fieldset {
+  padding-bottom: 0;
+}
+
+.sign-up label,
+.sign-in label {
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.sign-up fieldset legend,
+.sign-in fieldset legend {
+  font-size: 1.4rem;
+  color: #b39c4b;
+  font-weight: 700;
+}
+
+.sign-up input[type="text"],
+.sign-up input[type="password"],
+.sign-up input[type="date"],
+.sign-up input[type="datetime"],
+.sign-up input[type="email"],
+.sign-up input[type="number"],
+.sign-up .sign-in input[type="search"],
+.sign-up input[type="tel"],
+.sign-up input[type="time"],
+.sign-up input[type="url"],
+.sign-up textarea,
+.sign-up select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
+.sign-in input[type="text"],
+.sign-in input[type="password"],
+.sign-in input[type="date"],
+.sign-in input[type="datetime"],
+.sign-in input[type="email"],
+.sign-in input[type="number"],
+.sign-in .sign-in input[type="search"],
+.sign-in input[type="tel"],
+.sign-in input[type="time"],
+.sign-in input[type="url"],
+.sign-in textarea,
+.sign-in select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
+.sign-up input[type="radio"],
+.sign-up input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+.sign-up select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+.sign-up-link,
+.sign-in-link {
+  font-size: 1.2rem;
+  color: #b39c4b;
+  border-bottom: 0.1rem solid #b39c4b;
+  width: fit-content;
+  padding-bottom: 0.2rem;
+}
+
+/*******************/
+/***** DASHBOARD *****/
+/*******************/
+
+.dashboard div {
+  margin-bottom: 1.6rem;
+}
+
+.profil-picture {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.rank-profil {
+  font-size: 1.4rem;
+  border-bottom: 0.1rem solid #fff;
+  width: fit-content;
+  padding-bottom: 0.2rem;
+}
+
+.heading-profil {
+  margin: 0;
+}
+
+.menubar {
+  background: #eacb5a;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.dashboard-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dashboard-menu li a:link,
+.dashboard-menu li a:visited {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 1.6rem;
+  transition: 0.3s;
+}
+
+.dashboard-menu li a:hover,
+.dashboard-menu li a:active {
+  background-color: #b39c4b;
+}
+
+.dash-grid-1 div {
+  background: #ccc;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

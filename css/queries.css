@@ -45,6 +45,11 @@
   .testimonials-box {
     gap: 1rem;
   }
+
+  .sign-in form,
+  .sign-up form {
+    width: 60%;
+  }
 }
 
 /****************/
@@ -141,6 +146,11 @@
   .grid--4-cols {
     grid-template-columns: 1fr;
   }
+
+  .sign-in form,
+  .sign-up form {
+    width: 80%;
+  }
 }
 
 /****************/
@@ -178,36 +188,36 @@
   .btn--full {
     margin-bottom: 16px;
   }
-}
 
-.no-flexbox-gap .nav-list li:not(:last-child) {
-  margin-right: 3rem;
-}
+  .no-flexbox-gap .nav-list li:not(:last-child) {
+    margin-right: 3rem;
+  }
 
-.no-flexbox-gap .testimonial:not(:last-child) {
-  margin-right: 1rem;
-}
+  .no-flexbox-gap .testimonial:not(:last-child) {
+    margin-right: 1rem;
+  }
 
-.no-flexbox-gap .contact-form div:not(:last-child) {
-  margin-bottom: 2.4rem;
-}
+  .no-flexbox-gap .contact-form div:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
 
-.no-flexbox-gap .footer-nav li:not(:last-child) {
-  margin-bottom: 2.4rem;
-}
+  .no-flexbox-gap .footer-nav li:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
 
-.no-flexbox-gap .social-links li:not(:last-child) {
-  margin-right: 1.2rem;
-}
+  .no-flexbox-gap .social-links li:not(:last-child) {
+    margin-right: 1.2rem;
+  }
 
-.no-flexbox-gap .hero-section {
-  position: relative;
-}
+  .no-flexbox-gap .hero-section {
+    position: relative;
+  }
 
-.no-flexbox-gap .hero-box {
-  position: absolute;
-  top: 25%;
-  left: 10%;
+  .no-flexbox-gap .hero-box {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+  }
 }
 
 /****************/

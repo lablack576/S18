@@ -106,7 +106,8 @@ ul {
 }
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+.btn--input {
   border-radius: 9px;
   display: inline-block;
   font-size: 2rem;
@@ -124,14 +125,16 @@ ul {
 }
 
 .btn--full:link,
-.btn--full:visited {
+.btn--full:visited,
+.btn--input--full {
   background-color: #eacb5a;
   color: #fff;
   margin-right: 0.2rem;
 }
 
 .btn--full:hover,
-.btn--full:active {
+.btn--full:active,
+.btn--input--full:hover {
   background-color: #bba248;
   color: #fff;
   padding: 1.6rem 3.6rem;
@@ -166,4 +169,8 @@ ul {
   font-size: 1.8rem;
   line-height: 1.8;
   color: #555;
+}
+
+fieldset {
+  border: 0;
 }
