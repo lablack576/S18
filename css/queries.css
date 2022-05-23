@@ -166,6 +166,13 @@
     width: 300px !important;
     height: 170px !important;
   }
+
+  .dashboard-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+  }
 }
 
 /****************/

@@ -12,7 +12,7 @@
       content="Confidence & Basic Work is a training club for muay thai, kick boxing and MMA athletes."
     />
 
-    <title>Privacy Policy</title>
+    <title>F.A.Q</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -44,7 +44,7 @@
     <section class="hero-section" style="height: 50vh">
       <header class="header container">
         <div class="logo">
-          <a href="index.html"
+          <a href="index.php"
             ><img
               src="img/logo-black.png"
               alt="Confidence & Basic work logo"
@@ -54,16 +54,14 @@
       </header>
       <div class="hero-box container">
         <div>
-          <h1 class="primary-heading">Privacy Policy</h1>
+          <h1 class="primary-heading">F.A.Q</h1>
         </div>
       </div>
     </section>
     <section class="page-content">
       <div class="container">
-        <h2 class="page-secondary-heading">
-          Privacy Policy - Confidence & Basic Work
-        </h2>
-        <h3 class="page-tertiary-heading">Lorem 1</h3>
+        <h2 class="page-secondary-heading">F.A.Q - Confidence & Basic Work</h2>
+        <h3 class="page-tertiary-heading">Question 1</h3>
         <p class="page-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
           quibusdam exercitationem, deserunt molestiae tempore necessitatibus
@@ -80,7 +78,7 @@
           Quae.
         </p>
 
-        <h3 class="page-tertiary-heading">Lorem 2</h3>
+        <h3 class="page-tertiary-heading">Question 2</h3>
         <p class="page-description">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam error
           natus quas dolores velit autem distinctio, animi id officia modi!
@@ -91,7 +89,7 @@
           Quae.
         </p>
 
-        <h3 class="page-tertiary-heading">Lorem 3</h3>
+        <h3 class="page-tertiary-heading">Question 3</h3>
         <p class="page-description">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam error
           natus quas dolores velit autem distinctio, animi id officia modi!
@@ -184,11 +182,11 @@
           <p class="footer-heading">Resources</p>
           <ul class="footer-nav">
             <li>
-              <a class="footer-link" href="privacy_policy.html"
+              <a class="footer-link" href="privacy_policy.php"
                 >Privacy &amp; terms</a
               >
             </li>
-            <li><a class="footer-link" href="faq.html">F.A.Q</a></li>
+            <li><a class="footer-link" href="faq.php">F.A.Q</a></li>
           </ul>
         </nav-footer>
         <p class="dev">

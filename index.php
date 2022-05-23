@@ -1,3 +1,16 @@
+<!-- <?php require_once "config.php";
+session_start();
+
+// if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+//   header("location: dashboard.php");
+//   exit;  
+// } else {
+
+// }
+
+$name = $_SESSION["user_name"];
+
+ ?> -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,13 +53,14 @@
     <script defer src="js/safari.js"></script>
   </head>
   <body>
+
     <!-- Reusable section can't be in the main -->
     <main>
       <!-- Hero sectin 100vh -->
       <section class="hero-section">
         <header class="header container">
           <div class="logo">
-            <a href="index.html"
+            <a href="index.php"
               ><img
                 src="img/logo-black.png"
                 alt="Confidence & Basic work logo"
@@ -61,9 +75,25 @@
                 <a href="#contact" class="main-nav-link">Contact</a>
               </li>
               <li>
-                <a href="sign-in.html" class="main-nav-link cta-nav-link"
-                  >Sign In</a
+               
+                  <?php 
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+
+?>
+ <a href="dashboard.php" class="main-nav-link cta-nav-link"
+                  ><?php echo $name; ?></a
                 >
+<?php
+
+} else {
+  
+  ?> <a href="sign-in.php" class="main-nav-link cta-nav-link"
+  >Sign in</a
+><?php
+
+}
+                  ?>
+                 
               </li>
             </ul>
             <ion-icon
@@ -92,7 +122,20 @@
               A harmless man is not a good man. A good man is a very dangerous
               man who has that under voluntary control.
             </p>
-            <a href="sign-up.html" class="btn btn--full">Join the team</a>
+            <?php 
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+
+?>
+
+<?php
+
+} else {
+  
+  ?>             <a href="sign-up.php" class="btn btn--full">Join the team</a>
+  <?php
+
+}
+                  ?>
             <a href="#aboutus" class="btn btn--outline">Learn more</a>
           </div>
         </div>
@@ -424,11 +467,11 @@
           <p class="footer-heading">Resources</p>
           <ul class="footer-nav">
             <li>
-              <a class="footer-link" href="privacy_policy.html"
+              <a class="footer-link" href="privacy_policy.php"
                 >Privacy &amp; terms</a
               >
             </li>
-            <li><a class="footer-link" href="faq.html">F.A.Q</a></li>
+            <li><a class="footer-link" href="faq.php">F.A.Q</a></li>
           </ul>
         </nav-footer>
         <p class="dev">

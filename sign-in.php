@@ -1,3 +1,52 @@
+<?php 
+// session_destroy();
+
+session_start();
+
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+    header("location: dashboard.php");
+    exit;
+}
+
+$user_name = $user_password = $user_msg = "" ;
+
+require_once "config.php";
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+// echo "Enter here";
+$user_name = $_POST["user_name"];
+$user_password = $_POST["user_password"];
+
+$sql = "SELECT * FROM user WHERE name= ? and password= ?";
+
+if($stmt = mysqli_prepare($link, $sql)){
+  mysqli_stmt_bind_param($stmt, "ss", $user_name,$user_password);
+
+  if(mysqli_stmt_execute($stmt)){
+    mysqli_stmt_store_result($stmt);
+
+    if(mysqli_stmt_num_rows($stmt) == 1){
+
+
+      $_SESSION["loggedin"] = true;
+
+      $_SESSION["user_name"] = $user_name;
+
+      header("location: dashboard.php");
+
+  } else {
+    $user_msg =  "The information you enter are incorrect";
+
+  }
+
+  }
+
+}
+
+
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -44,7 +93,7 @@
     <section class="hero-section" style="height: 50vh">
       <header class="header container">
         <div class="logo">
-          <a href="index.html"
+          <a href="index.php"
             ><img
               src="img/logo-black.png"
               alt="Confidence & Basic work logo"
@@ -59,17 +108,18 @@
       </div>
     </section>
     <section class="page-content sign-in">
-      <form action="sign-in.html" methode="post">
+      <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"
+ method="POST">
         <h2>Sign In - Welcome Back</h2>
         <fieldset>
           <legend>Enter your information to log in to your account :</legend>
 
-          <label for="email">Email :</label>
+          <label for="name">Name :</label>
           <input
-            type="email"
-            id="mail"
-            name="user_email"
-            placeholder="Enter your email address"
+            type="text"
+            id="name"
+            name="user_name"
+            placeholder="Enter your full name"
           />
           <label for="password">Password :</label>
           <input
@@ -79,6 +129,7 @@
             placeholder="Enter your password"
           />
         </fieldset>
+        <p style="font-size: 1.2rem;;;color: #ab3838;font-weight: 600;font-style: italic;"><?php echo $user_msg; ?></p>
 
         <input
           class="btn--input btn--input--full"
@@ -86,7 +137,7 @@
           type="submit"
           value="Log in"
         />
-        <a class="sign-in-link" href="sign-up.html" title="Sign up now"
+        <a class="sign-in-link" href="sign-up.php" title="Sign up now"
           >Don't have an account? Register now.</a
         >
       </form>
@@ -163,11 +214,11 @@
           <p class="footer-heading">Resources</p>
           <ul class="footer-nav">
             <li>
-              <a class="footer-link" href="privacy_policy.html"
+              <a class="footer-link" href="privacy_policy.php"
                 >Privacy &amp; terms</a
               >
             </li>
-            <li><a class="footer-link" href="faq.html">F.A.Q</a></li>
+            <li><a class="footer-link" href="faq.php">F.A.Q</a></li>
           </ul>
         </nav-footer>
         <p class="dev">
